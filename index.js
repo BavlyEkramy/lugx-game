@@ -74,7 +74,7 @@ function setFooterYear() {
     yearSpans[i].textContent = String(year); // Type Conversion: Number → String
   }
 }
-
+// bavly
 /* ================================================================
    3. RENDER TRENDING CARDS (for loop + DOM)
    ================================================================ */
@@ -91,26 +91,15 @@ function renderTrendingCards() {
     var card = document.createElement("div");
     card.className = "card";
 
-    card.innerHTML =
-      '<img src="' +
-      game.img +
-      '" alt="' +
-      game.title +
-      '">' +
+    card.innerHTML ='<img src="' + game.img +'" alt="' + game.title +'">' +
       '<div class="cardInfo">' +
-      '<div class="cardName">' +
-      "<p>" +
-      game.genre +
-      "</p>" +
-      "<h3>" +
-      game.title +
-      "</h3>" +
-      "</div>" +
-      '<a href="#" class="icon">' +
-      '<img src="images/online-shopping.png" alt="Buy ' +
-      game.title +
-      '">' +
-      "</a>" +
+        '<div class="cardName">' + 
+          "<p>" + game.genre + "</p>" +
+          "<h3>" + game.title + "</h3>" +
+        "</div>" +
+        '<a href="#" class="icon">' +
+          '<img src="images/online-shopping.png" alt="Buy ' + game.title + '">' +
+        "</a>" +
       "</div>";
 
     container.appendChild(card);
